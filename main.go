@@ -21,6 +21,7 @@ func main() {
 
 }
 
+// Gets default value passed if no value exist for given environment variable.
 func getEnv(key, fallback string) string {
 	if value, ok := os.LookupEnv(key); ok {
 		return value
